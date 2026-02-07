@@ -1,0 +1,32 @@
+<svg width="600" height="600" viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="600" height="600" rx="30" fill="#F8FAFC"/>
+<!-- Central Core -->
+<circle cx="300" cy="300" r="80" fill="#0A2540"/>
+<g transform="translate(260, 260)">
+<path d="M40 20L60 60H20L40 20Z" fill="#14B8A6"/>
+</g>
+<!-- Orbiting Nodes -->
+<!-- Top Right -->
+<circle cx="450" cy="150" r="40" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+<path d="M450 150L356 244" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4 4"/>
+<!-- Bottom Left -->
+<circle cx="150" cy="450" r="50" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+<path d="M150 450L244 356" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4 4"/>
+<!-- Top Left -->
+<circle cx="150" cy="150" r="30" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+<path d="M150 150L244 244" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4 4"/>
+<!-- Bottom Right -->
+<circle cx="450" cy="450" r="45" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+<path d="M450 450L356 356" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4 4"/>
+
+<!-- Icons in Nodes -->
+<!-- Top Right Code -->
+<rect x="435" y="140" width="30" height="20" rx="4" fill="#2563EB"/>
+<!-- Bottom Left Database -->
+<path d="M150 435C158 435 165 438 165 442V458C165 462 158 465 150 465C142 465 135 462 135 458V442C135 438 142 435 150 435Z" fill="#14B8A6"/>
+
+<!-- Floating Elements -->
+<rect x="100" y="280" width="40" height="40" rx="8" fill="#F1F5F9"/>
+<rect x="480" y="280" width="30" height="30" rx="6" fill="#F1F5F9"/>
+
+</svg>

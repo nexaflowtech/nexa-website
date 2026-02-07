@@ -1,0 +1,54 @@
+<svg width="800" height="500" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="800" height="500" rx="20" fill="white"/>
+<!-- Center Hub -->
+<circle cx="400" cy="250" r="60" fill="#0A2540" opacity="0.1"/>
+<circle cx="400" cy="250" r="30" fill="#0A2540"/>
+<path d="M385 240L415 240L400 265Z" fill="#14B8A6"/>
+
+<!-- Orbiting Nodes (Team Members) -->
+<g>
+<circle cx="200" cy="150" r="25" fill="#2563EB" opacity="0.1"/>
+<circle cx="200" cy="150" r="12" fill="#2563EB"/>
+<path d="M212 162L370 238" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4 4"/>
+</g>
+<g>
+<circle cx="600" cy="150" r="25" fill="#14B8A6" opacity="0.1"/>
+<circle cx="600" cy="150" r="12" fill="#14B8A6"/>
+<path d="M588 162L430 238" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4 4"/>
+</g>
+<g>
+<circle cx="200" cy="350" r="25" fill="#0A2540" opacity="0.1"/>
+<circle cx="200" cy="350" r="12" fill="#0A2540"/>
+<path d="M212 338L370 262" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4 4"/>
+</g>
+<g>
+<circle cx="600" cy="350" r="25" fill="#2563EB" opacity="0.1"/>
+<circle cx="600" cy="350" r="12" fill="#2563EB"/>
+<path d="M588 338L430 262" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4 4"/>
+</g>
+<g>
+<circle cx="400" cy="100" r="20" fill="#E2E8F0"/>
+<path d="M400 120L400 220" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4 4"/>
+</g>
+
+<!-- Floating Data Cards -->
+<rect x="250" y="80" width="80" height="50" rx="8" fill="white" filter="url(#shadow)"/>
+<rect x="260" y="90" width="60" height="6" rx="3" fill="#E2E8F0"/>
+<rect x="260" y="105" width="40" height="6" rx="3" fill="#E2E8F0"/>
+
+<rect x="470" y="370" width="80" height="50" rx="8" fill="white" filter="url(#shadow)"/>
+<rect x="480" y="380" width="60" height="6" rx="3" fill="#E2E8F0"/>
+<rect x="480" y="395" width="40" height="6" rx="3" fill="#14B8A6"/>
+
+<defs>
+<filter id="shadow" x="0" y="0" width="100" height="100" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>

@@ -1,0 +1,83 @@
+<svg width="600" height="500" viewBox="0 0 600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#17B897;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0E8E73;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4AA8FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0070B8;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="500" fill="#F8FAFC"/>
+  
+  <!-- Central Shield -->
+  <g filter="url(#shadow)">
+    <path d="M 300,80 L 400,120 L 400,260 Q 400,320 300,380 Q 200,320 200,260 L 200,120 Z" 
+          fill="url(#tealGrad)"/>
+  </g>
+  
+  <!-- Inner Shield Detail -->
+  <path d="M 300,110 L 370,140 L 370,250 Q 370,300 300,350 Q 230,300 230,250 L 230,140 Z" 
+        fill="white" opacity="0.2"/>
+  
+  <!-- Lock Icon -->
+  <rect x="280" y="200" width="40" height="50" rx="6" fill="white" opacity="0.9"/>
+  <circle cx="300" cy="185" r="18" stroke="white" stroke-width="6" fill="none" opacity="0.9"/>
+  <circle cx="300" cy="220" r="6" fill="url(#tealGrad)"/>
+  <line x1="300" y1="220" x2="300" y2="235" stroke="url(#tealGrad)" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Encryption Layers -->
+  <g opacity="0.7">
+    <ellipse cx="300" cy="230" rx="120" ry="150" stroke="url(#blueGrad)" stroke-width="3" fill="none" stroke-dasharray="10,5"/>
+    <ellipse cx="300" cy="230" rx="145" ry="180" stroke="url(#blueGrad)" stroke-width="2" fill="none" stroke-dasharray="10,5" opacity="0.7"/>
+    <ellipse cx="300" cy="230" rx="170" ry="210" stroke="url(#blueGrad)" stroke-width="2" fill="none" stroke-dasharray="10,5" opacity="0.5"/>
+  </g>
+  
+  <!-- Security Features -->
+  <g>
+    <!-- Top Left - Encryption -->
+    <circle cx="120" cy="120" r="35" fill="white" filter="url(#shadow)"/>
+    <path d="M 110,115 L 115,120 L 130,105" stroke="url(#tealGrad)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="120" y="165" font-family="Arial" font-size="11" fill="#64748B" text-anchor="middle">Encryption</text>
+    
+    <!-- Top Right - Access Control -->
+    <circle cx="480" cy="120" r="35" fill="white" filter="url(#shadow)"/>
+    <circle cx="480" cy="115" r="12" stroke="url(#tealGrad)" stroke-width="2.5" fill="none"/>
+    <path d="M 480,127 L 480,135" stroke="url(#tealGrad)" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 467,132 Q 467,143 480,143 Q 493,143 493,132" stroke="url(#tealGrad)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+    <text x="480" y="165" font-family="Arial" font-size="11" fill="#64748B" text-anchor="middle">Access Control</text>
+    
+    <!-- Bottom Left - Firewall -->
+    <circle cx="120" cy="360" r="35" fill="white" filter="url(#shadow)"/>
+    <rect x="105" y="350" width="30" height="25" rx="2" stroke="url(#tealGrad)" stroke-width="2.5" fill="none"/>
+    <line x1="113" y1="357" x2="113" y2="368" stroke="url(#blueGrad)" stroke-width="2"/>
+    <line x1="120" y1="357" x2="120" y2="368" stroke="url(#blueGrad)" stroke-width="2"/>
+    <line x1="127" y1="357" x2="127" y2="368" stroke="url(#blueGrad)" stroke-width="2"/>
+    <text x="120" y="405" font-family="Arial" font-size="11" fill="#64748B" text-anchor="middle">Firewall</text>
+    
+    <!-- Bottom Right - Backup -->
+    <circle cx="480" cy="360" r="35" fill="white" filter="url(#shadow)"/>
+    <path d="M 465,355 L 465,370 L 495,370 L 495,355" stroke="url(#tealGrad)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="480" cy="350" r="6" stroke="url(#tealGrad)" stroke-width="2.5" fill="none"/>
+    <path d="M 475,362 Q 480,368 485,362" stroke="url(#blueGrad)" stroke-width="2" fill="none" stroke-linecap="round"/>
+    <text x="480" y="405" font-family="Arial" font-size="11" fill="#64748B" text-anchor="middle">Auto Backup</text>
+  </g>
+  
+  <!-- Connection Lines -->
+  <line x1="155" y1="130" x2="250" y2="180" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5,3" opacity="0.5"/>
+  <line x1="445" y1="130" x2="350" y2="180" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5,3" opacity="0.5"/>
+  <line x1="155" y1="350" x2="250" y2="300" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5,3" opacity="0.5"/>
+  <line x1="445" y1="350" x2="350" y2="300" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="5,3" opacity="0.5"/>
+  
+  <!-- Badge -->
+  <g transform="translate(260, 420)">
+    <rect width="80" height="30" rx="15" fill="url(#tealGrad)"/>
+    <text x="40" y="20" font-family="Arial" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Bank-Grade</text>
+  </g>
+</svg>

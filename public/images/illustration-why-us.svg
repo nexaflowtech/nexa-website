@@ -1,0 +1,71 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Background Elements -->
+<circle cx="400" cy="300" r="250" fill="url(#glow)" opacity="0.3"/>
+<defs>
+<radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(400 300) rotate(90) scale(250)">
+<stop stop-color="#2563EB" stop-opacity="0.2"/>
+<stop offset="1" stop-color="#2563EB" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<!-- Central Isometric Core -->
+<g transform="translate(400, 300) rotate(-5) skewX(5) scale(1 0.8)">
+<!-- Platform Base -->
+<rect x="-150" y="-150" width="300" height="300" rx="16" fill="#F8FAFC" filter="url(#shadow-lg)"/>
+<rect x="-150" y="-150" width="300" height="300" rx="16" stroke="#E2E8F0" stroke-width="2"/>
+
+<!-- Layer 1: Database/Backend -->
+<g transform="translate(0, 0)">
+<rect x="-100" y="-100" width="200" height="200" rx="8" fill="#F1F5F9" stroke="#CBD5E1"/>
+<rect x="-80" y="-80" width="60" height="60" rx="4" fill="#0A2540" opacity="0.1"/>
+<rect x="20" y="-80" width="60" height="60" rx="4" fill="#0A2540" opacity="0.1"/>
+<rect x="-80" y="20" width="60" height="60" rx="4" fill="#0A2540" opacity="0.1"/>
+<rect x="20" y="20" width="60" height="60" rx="4" fill="#0A2540" opacity="0.1"/>
+</g>
+
+<!-- Connectivity Lines -->
+<path d="M-120 0H-180" stroke="#2563EB" stroke-width="4"/>
+<path d="M120 0H180" stroke="#14B8A6" stroke-width="4"/>
+<path d="M0 -120V-180" stroke="#F59E0B" stroke-width="4"/>
+</g>
+
+<!-- Floating Feature Nodes -->
+<!-- Speed -->
+<g transform="translate(200, 200)">
+<rect x="0" y="0" width="80" height="80" rx="12" fill="white" filter="url(#shadow-lg)"/>
+<path d="M40 25L50 40H30L45 60" fill="#F59E0B"/>
+</g>
+
+<!-- Security -->
+<g transform="translate(600, 250)">
+<rect x="0" y="0" width="80" height="80" rx="12" fill="white" filter="url(#shadow-lg)"/>
+<path d="M40 25L55 35V50C55 60 40 70 40 70C40 70 25 60 25 50V35L40 25Z" fill="#14B8A6"/>
+</g>
+
+<!-- Scalability -->
+<g transform="translate(250, 450)">
+<rect x="0" y="0" width="80" height="80" rx="12" fill="white" filter="url(#shadow-lg)"/>
+<rect x="25" y="45" width="10" height="15" fill="#2563EB"/>
+<rect x="35" y="35" width="10" height="25" fill="#2563EB"/>
+<rect x="45" y="25" width="10" height="35" fill="#2563EB"/>
+</g>
+
+<!-- Integration -->
+<g transform="translate(550, 400)">
+<rect x="0" y="0" width="80" height="80" rx="12" fill="white" filter="url(#shadow-lg)"/>
+<path d="M40 25C30 25 25 30 25 40C25 50 30 55 40 55C50 55 55 50 55 40" stroke="#0A2540" stroke-width="4" stroke-linecap="round"/>
+<circle cx="55" cy="40" r="4" fill="#0A2540"/>
+</g>
+
+<defs>
+<filter id="shadow-lg" x="-20" y="-20" width="140%" height="140%" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="8"/>
+<feGaussianBlur stdDeviation="12"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>

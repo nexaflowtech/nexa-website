@@ -1,0 +1,118 @@
+<svg width="600" height="500" viewBox="0 0 600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="yellowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FCD34D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F59E0B;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4AA8FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0070B8;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="500" fill="#F8FAFC"/>
+  
+  <!-- Lightning Bolt - Speed Symbol -->
+  <g filter="url(#glow)">
+    <path d="M 320,80 L 220,240 L 280,240 L 260,380 L 400,200 L 330,200 L 370,80 Z" 
+          fill="url(#yellowGrad)" stroke="#F59E0B" stroke-width="3"/>
+  </g>
+  
+  <!-- Sprint Cycles -->
+  <g>
+    <!-- Week 1 -->
+    <rect x="80" y="120" width="100" height="70" rx="8" fill="url(#blueGrad)" opacity="0.3"/>
+    <text x="130" y="145" font-family="Arial" font-size="11" font-weight="bold" fill="#0F172A" text-anchor="middle">Week 1</text>
+    <rect x="90" y="155" width="80" height="6" rx="3" fill="white"/>
+    <rect x="90" y="165" width="80" height="6" rx="3" fill="white"/>
+    <rect x="90" y="175" width="60" height="6" rx="3" fill="white"/>
+    
+    <!-- Week 2 -->
+    <rect x="200" y="120" width="100" height="70" rx="8" fill="url(#blueGrad)" opacity="0.5"/>
+    <text x="250" y="145" font-family="Arial" font-size="11" font-weight="bold" fill="#0F172A" text-anchor="middle">Week 2</text>
+    <rect x="210" y="155" width="80" height="6" rx="3" fill="white"/>
+    <rect x="210" y="165" width="80" height="6" rx="3" fill="white"/>
+    <rect x="210" y="175" width="60" height="6" rx="3" fill="white"/>
+    
+    <!-- Week 3 -->
+    <rect x="320" y="120" width="100" height="70" rx="8" fill="url(#blueGrad)" opacity="0.7"/>
+    <text x="370" y="145" font-family="Arial" font-size="11" font-weight="bold" fill="white" text-anchor="middle">Week 3</text>
+    <rect x="330" y="155" width="80" height="6" rx="3" fill="white"/>
+    <rect x="330" y="165" width="80" height="6" rx="3" fill="white"/>
+    <rect x="330" y="175" width="60" height="6" rx="3" fill="white"/>
+    
+    <!-- Week 4 - MVP -->
+    <rect x="440" y="120" width="100" height="70" rx="8" fill="url(#blueGrad)"/>
+    <text x="490" y="145" font-family="Arial" font-size="11" font-weight="bold" fill="white" text-anchor="middle">MVP</text>
+    <circle cx="490" cy="168" r="15" stroke="white" stroke-width="3" fill="none"/>
+    <path d="M 480,168 L 487,175 L 500,162" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- Component Modules -->
+  <g>
+    <text x="300" y="240" font-family="Arial" font-size="14" font-weight="bold" fill="#0F172A" text-anchor="middle">Component-Driven Development</text>
+    
+    <!-- Module 1 -->
+    <g transform="translate(100, 260)">
+      <rect width="90" height="80" rx="8" fill="white" stroke="url(#blueGrad)" stroke-width="2"/>
+      <circle cx="45" cy="30" r="12" fill="url(#blueGrad)" opacity="0.3"/>
+      <rect x="20" y="50" width="50" height="5" rx="2" fill="#CBD5E1"/>
+      <rect x="20" y="60" width="40" height="5" rx="2" fill="#E2E8F0"/>
+      <rect x="20" y="70" width="35" height="5" rx="2" fill="#E2E8F0"/>
+    </g>
+    
+    <!-- Module 2 -->
+    <g transform="translate(210, 260)">
+      <rect width="90" height="80" rx="8" fill="white" stroke="url(#blueGrad)" stroke-width="2"/>
+      <circle cx="45" cy="30" r="12" fill="url(#blueGrad)" opacity="0.3"/>
+      <rect x="20" y="50" width="50" height="5" rx="2" fill="#CBD5E1"/>
+      <rect x="20" y="60" width="40" height="5" rx="2" fill="#E2E8F0"/>
+      <rect x="20" y="70" width="35" height="5" rx="2" fill="#E2E8F0"/>
+    </g>
+    
+    <!-- Module 3 -->
+    <g transform="translate(320, 260)">
+      <rect width="90" height="80" rx="8" fill="white" stroke="url(#blueGrad)" stroke-width="2"/>
+      <circle cx="45" cy="30" r="12" fill="url(#blueGrad)" opacity="0.3"/>
+      <rect x="20" y="50" width="50" height="5" rx="2" fill="#CBD5E1"/>
+      <rect x="20" y="60" width="40" height="5" rx="2" fill="#E2E8F0"/>
+      <rect x="20" y="70" width="35" height="5" rx="2" fill="#E2E8F0"/>
+    </g>
+    
+    <!-- Module 4 -->
+    <g transform="translate(430, 260)">
+      <rect width="90" height="80" rx="8" fill="white" stroke="url(#blueGrad)" stroke-width="2"/>
+      <circle cx="45" cy="30" r="12" fill="url(#blueGrad)" opacity="0.3"/>
+      <rect x="20" y="50" width="50" height="5" rx="2" fill="#CBD5E1"/>
+      <rect x="20" y="60" width="40" height="5" rx="2" fill="#E2E8F0"/>
+      <rect x="20" y="70" width="35" height="5" rx="2" fill="#E2E8F0"/>
+    </g>
+  </g>
+  
+  <!-- Timeline -->
+  <g>
+    <line x1="100" y1="390" x2="500" y2="390" stroke="#CBD5E1" stroke-width="3"/>
+    <circle cx="100" cy="390" r="8" fill="url(#blueGrad)"/>
+    <circle cx="220" cy="390" r="8" fill="url(#blueGrad)"/>
+    <circle cx="340" cy="390" r="8" fill="url(#blueGrad)"/>
+    <circle cx="460" cy="390" r="8" fill="url(#blueGrad)"/>
+    <circle cx="500" cy="390" r="12" fill="url(#yellowGrad)" filter="url(#glow)"/>
+    
+    <text x="100" y="415" font-family="Arial" font-size="10" fill="#64748B" text-anchor="middle">Start</text>
+    <text x="500" y="415" font-family="Arial" font-size="10" fill="#64748B" text-anchor="middle">Launch</text>
+  </g>
+  
+  <!-- Speed Indicator -->
+  <g transform="translate(200, 430)">
+    <rect width="200" height="40" rx="20" fill="white" stroke="url(#yellowGrad)" stroke-width="2"/>
+    <text x="100" y="27" font-family="Arial" font-size="14" font-weight="bold" fill="#F59E0B" text-anchor="middle">⚡ Weeks, Not Years</text>
+  </g>
+</svg>

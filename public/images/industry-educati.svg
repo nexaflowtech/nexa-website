@@ -1,0 +1,85 @@
+<svg width="800" height="600" viewBox="0 0 800 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="yellowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FDE047;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EAB308;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="darkYellow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EAB308;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#CA8A04;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="#FEFCE8"/>
+  
+  <!-- Books Stack -->
+  <g filter="url(#shadow)">
+    <rect x="150" y="350" width="180" height="40" fill="url(#yellowGrad)" rx="4" transform="rotate(-2 240 370)"/>
+    <rect x="150" y="310" width="180" height="40" fill="url(#darkYellow)" rx="4" transform="rotate(1 240 330)"/>
+    <rect x="150" y="270" width="180" height="40" fill="#FACC15" rx="4" transform="rotate(-1 240 290)"/>
+    <rect x="150" y="230" width="180" height="40" fill="url(#yellowGrad)" rx="4" transform="rotate(2 240 250)"/>
+  </g>
+  
+  <!-- Graduation Cap -->
+  <g transform="translate(450, 180)" filter="url(#shadow)">
+    <!-- Cap Top -->
+    <path d="M 0,-60 L -100,-30 L -100,-20 L 0,10 L 100,-20 L 100,-30 Z" fill="url(#yellowGrad)"/>
+    <path d="M 0,-60 L 100,-30 L 0,0 L -100,-30 Z" fill="url(#darkYellow)"/>
+    
+    <!-- Tassel -->
+    <line x1="0" y1="-60" x2="0" y2="0" stroke="#CA8A04" stroke-width="3"/>
+    <circle cx="0" cy="5" r="8" fill="#EAB308"/>
+  </g>
+  
+  <!-- Laptop/Digital Learning -->
+  <g transform="translate(450, 350)" filter="url(#shadow)">
+    <rect x="-150" y="0" width="300" height="180" fill="url(#yellowGrad)" rx="12"/>
+    <rect x="-140" y="10" width="280" height="140" fill="white" opacity="0.9" rx="8"/>
+    
+    <!-- Screen Content - Course Layout -->
+    <rect x="-120" y="30" width="80" height="60" fill="url(#yellowGrad)" opacity="0.3" rx="4"/>
+    <rect x="-25" y="30" width="135" height="20" fill="#EAB308" opacity="0.3" rx="4"/>
+    <rect x="-25" y="60" width="135" height="8" fill="#CBD5E1" rx="4"/>
+    <rect x="-25" y="75" width="100" height="8" fill="#CBD5E1" rx="4"/>
+    
+    <rect x="-120" y="105" width="240" height="8" fill="#CBD5E1" rx="4"/>
+    <rect x="-120" y="120" width="240" height="8" fill="#CBD5E1" rx="4"/>
+    <rect x="-120" y="135" width="180" height="8" fill="#CBD5E1" rx="4"/>
+    
+    <!-- Keyboard Base -->
+    <path d="M -160,180 L -150,200 L 150,200 L 160,180 Z" fill="url(#darkYellow)"/>
+  </g>
+  
+  <!-- Certificate/Diploma -->
+  <g transform="translate(150, 150)" filter="url(#shadow)">
+    <rect x="0" y="0" width="200" height="140" fill="white" stroke="url(#yellowGrad)" stroke-width="6" rx="8"/>
+    <rect x="20" y="30" width="160" height="8" fill="#EAB308" opacity="0.5" rx="4"/>
+    <rect x="40" y="50" width="120" height="6" fill="#CBD5E1" rx="3"/>
+    <rect x="40" y="65" width="120" height="6" fill="#CBD5E1" rx="3"/>
+    <rect x="40" y="80" width="90" height="6" fill="#CBD5E1" rx="3"/>
+    
+    <!-- Ribbon/Seal -->
+    <circle cx="175" cy="125" r="22" fill="url(#yellowGrad)"/>
+    <circle cx="175" cy="125" r="15" fill="white" opacity="0.3"/>
+    <path d="M 175,147 L 165,170 L 175,160 L 185,170 Z" fill="url(#darkYellow)"/>
+  </g>
+  
+  <!-- Apple (Teacher's Apple) -->
+  <g transform="translate(550, 480)">
+    <ellipse cx="0" cy="0" rx="35" ry="40" fill="#EF4444" opacity="0.8"/>
+    <path d="M 0,-40 Q 5,-50 10,-55" stroke="#A16207" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <ellipse cx="-5" cy="-5" rx="8" ry="10" fill="white" opacity="0.3"/>
+  </g>
+  
+  <!-- Pencil -->
+  <g transform="translate(650, 300) rotate(-30)">
+    <rect x="0" y="0" width="20" height="150" fill="#EAB308" rx="4"/>
+    <path d="M 0,0 L 10,-25 L 20,0 Z" fill="#FBBF24"/>
+    <rect x="0" y="140" width="20" height="20" fill="#64748B"/>
+    <path d="M 0,160 L 10,175 L 20,160 Z" fill="#1E293B"/>
+  </g>
+</svg>

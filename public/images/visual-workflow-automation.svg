@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F8FAFC"/>
+  <defs>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#E2E8F0" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#grid)"/>
+  
+  <!-- Workflow Nodes -->
+  <!-- Order Received -->
+  <rect x="50" y="250" width="120" height="100" rx="12" fill="#0F172A"/>
+  <circle cx="110" cy="280" r="15" fill="#3B82F6"/>
+  <path d="M 105 280 L 108 283 L 115 276" stroke="white" stroke-width="2" fill="none"/>
+  <text x="110" y="315" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="white" text-anchor="middle">Order</text>
+  <text x="110" y="335" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="white" text-anchor="middle">Received</text>
+  
+  <!-- Arrow 1 -->
+  <line x1="170" y1="300" x2="220" y2="300" stroke="#14B8A6" stroke-width="3"/>
+  <polygon points="220,300 215,295 215,305" fill="#14B8A6"/>
+  
+  <!-- Inventory Check -->
+  <rect x="230" y="250" width="120" height="100" rx="12" fill="#0F172A"/>
+  <circle cx="290" cy="280" r="15" fill="#14B8A6"/>
+  <rect x="283" y="273" width="14" height="14" fill="white"/>
+  <text x="290" y="315" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="white" text-anchor="middle">Inventory</text>
+  <text x="290" y="335" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="white" text-anchor="middle">Check</text>
+  
+  <!-- Arrow 2 -->
+  <line x1="350" y1="300" x2="400" y2="300" stroke="#14B8A6" stroke-width="3"/>
+  <polygon points="400,300 395,295 395,305" fill="#14B8A6"/>
+  
+  <!-- Payment Processing -->
+  <rect x="410" y="250" width="120" height="100" rx="12" fill="#0F172A"/>
+  <circle cx="470" cy="280" r="15" fill="#14B8A6"/>
+  <text x="470" y="285" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">$</text>
+  <text x="470" y="315" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="white" text-anchor="middle">Payment</text>
+  <text x="470" y="335" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="white" text-anchor="middle">Processing</text>
+  
+  <!-- Arrow 3 -->
+  <line x1="530" y1="300" x2="580" y2="300" stroke="#14B8A6" stroke-width="3"/>
+  <polygon points="580,300 575,295 575,305" fill="#14B8A6"/>
+  
+  <!-- Fulfillment -->
+  <rect x="590" y="250" width="120" height="100" rx="12" fill="#0F172A"/>
+  <circle cx="650" cy="280" r="15" fill="#14B8A6"/>
+  <rect x="643" y="273" width="14" height="7" fill="white"/>
+  <rect x="643" y="283" width="14" height="4" fill="white"/>
+  <text x="650" y="315" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="white" text-anchor="middle">Fulfillment</text>
+  <text x="650" y="335" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="white" text-anchor="middle">& Packing</text>
+  
+  <!-- Arrow down -->
+  <line x1="650" y1="350" x2="650" y2="400" stroke="#14B8A6" stroke-width="3"/>
+  <polygon points="650,400 645,395 655,395" fill="#14B8A6"/>
+  
+  <!-- Shipping -->
+  <rect x="590" y="410" width="120" height="100" rx="12" fill="#0F172A"/>
+  <circle cx="650" cy="440" r="15" fill="#14B8A6"/>
+  <path d="M 643 440 L 650 435 L 657 440 L 650 445 Z" fill="white"/>
+  <text x="650" y="475" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="white" text-anchor="middle">Shipping</text>
+  <text x="650" y="495" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="white" text-anchor="middle">& Tracking</text>
+  
+  <!-- Arrow left -->
+  <line x1="590" y1="460" x2="540" y2="460" stroke="#14B8A6" stroke-width="3"/>
+  <polygon points="540,460 545,455 545,465" fill="#14B8A6"/>
+  
+  <!-- Customer Notification -->
+  <rect x="410" y="410" width="120" height="100" rx="12" fill="#0F172A"/>
+  <circle cx="470" cy="440" r="15" fill="#14B8A6"/>
+  <rect x="463" y="433" width="14" height="10" rx="2" fill="white"/>
+  <path d="M 463 433 L 470 440 L 477 433" stroke="white" stroke-width="1.5" fill="none"/>
+  <text x="470" y="475" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="white" text-anchor="middle">Customer</text>
+  <text x="470" y="495" font-family="Arial, sans-serif" font-size="14" font-weight="600" fill="white" text-anchor="middle">Notification</text>
+  
+  <!-- Automation Label -->
+  <rect x="300" y="50" width="200" height="40" rx="20" fill="#14B8A6"/>
+  <text x="400" y="75" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">Fully Automated</text>
+  
+  <!-- Time Indicator -->
+  <text x="400" y="570" font-family="Arial, sans-serif" font-size="14" fill="#64748B" text-anchor="middle">Average Processing Time: 4.2 minutes</text>
+</svg>

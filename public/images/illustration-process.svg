@@ -1,0 +1,44 @@
+<svg width="1000" height="400" viewBox="0 0 1000 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- Connection Line -->
+<path d="M100 200 H 900" stroke="#E2E8F0" stroke-width="4" stroke-dasharray="10 10"/>
+
+<!-- Step 1: Discovery -->
+<g transform="translate(100, 150)">
+<circle cx="50" cy="50" r="50" fill="white" filter="url(#shadow)"/>
+<circle cx="50" cy="50" r="46" fill="#EFF6FF" stroke="#2563EB" stroke-width="2"/>
+<path d="M50 35L65 65H35L50 35Z" fill="#2563EB"/>
+</g>
+
+<!-- Step 2: Build -->
+<g transform="translate(350, 150)">
+<rect x="0" y="0" width="100" height="100" rx="16" fill="white" filter="url(#shadow)"/>
+<rect x="4" y="4" width="92" height="92" rx="12" fill="#F0FDFA" stroke="#14B8A6" stroke-width="2"/>
+<rect x="30" y="30" width="40" height="40" rx="4" fill="#14B8A6"/>
+</g>
+
+<!-- Step 3: Deploy -->
+<g transform="translate(600, 150)">
+<polygon points="50,0 100,50 50,100 0,50" fill="white" filter="url(#shadow)"/>
+<polygon points="50,4 96,50 50,96 4,50" fill="#F8FAFC" stroke="#0A2540" stroke-width="2"/>
+<circle cx="50" cy="50" r="15" fill="#0A2540"/>
+</g>
+
+<!-- Step 4: Optimize -->
+<g transform="translate(850, 150)">
+<circle cx="50" cy="50" r="50" fill="white" filter="url(#shadow)"/>
+<circle cx="50" cy="50" r="46" fill="#F1F5F9" stroke="#64748B" stroke-width="2"/>
+<path d="M30 60 L45 40 L55 50 L70 30" stroke="#64748B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+
+<defs>
+<filter id="shadow" x="-10" y="-10" width="120" height="120" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+</defs>
+</svg>

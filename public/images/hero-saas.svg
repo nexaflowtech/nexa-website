@@ -1,0 +1,89 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="1200" height="800" rx="20" fill="white"/>
+<defs>
+<filter id="shadow" x="-50" y="-50" width="1300" height="900" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="20"/>
+<feGaussianBlur stdDeviation="30"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0392157 0 0 0 0 0.145098 0 0 0 0 0.25098 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+</filter>
+<linearGradient id="chart-gradient" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#2563EB" stop-opacity="0.2"/>
+<stop offset="1" stop-color="#2563EB" stop-opacity="0"/>
+</linearGradient>
+</defs>
+
+<!-- Main Dashboard Container -->
+<rect x="50" y="50" width="1100" height="700" rx="16" fill="#F8FAFC" filter="url(#shadow)"/>
+
+<!-- Sidebar -->
+<rect x="50" y="50" width="240" height="700" rx="16" fill="white" stroke="#E2E8F0"/>
+<rect x="50" y="50" width="240" height="700" rx="16" fill="white"/> <!-- Mask fix -->
+<path d="M50 66C50 57.1634 57.1634 50 66 50H290V750H66C57.1634 750 50 742.837 50 734V66Z" fill="white"/>
+
+<!-- Brand Logo Area -->
+<rect x="80" y="80" width="32" height="32" rx="6" fill="#0A2540"/>
+<rect x="120" y="86" width="100" height="20" rx="4" fill="#E2E8F0"/>
+
+<!-- Nav Items -->
+<rect x="70" y="150" width="200" height="40" rx="8" fill="#EFF6FF"/>
+<rect x="90" y="162" width="16" height="16" rx="4" fill="#2563EB"/>
+<rect x="116" y="164" width="80" height="12" rx="4" fill="#2563EB" fill-opacity="0.8"/>
+
+<rect x="70" y="200" width="200" height="40" rx="8" fill="white"/>
+<rect x="90" y="212" width="16" height="16" rx="4" fill="#94A3B8"/>
+<rect x="116" y="214" width="100" height="12" rx="4" fill="#E2E8F0"/>
+
+<rect x="70" y="250" width="200" height="40" rx="8" fill="white"/>
+<rect x="90" y="262" width="16" height="16" rx="4" fill="#94A3B8"/>
+<rect x="116" y="264" width="90" height="12" rx="4" fill="#E2E8F0"/>
+
+<!-- Main Content Area -->
+<!-- Top Bar -->
+<rect x="310" y="50" width="840" height="80" fill="white" stroke="#E2E8F0"/>
+<path d="M310 50H1134C1142.84 50 1150 57.1634 1150 66V130H310V50Z" fill="white"/>
+<rect x="340" y="75" width="200" height="30" rx="6" fill="#F1F5F9"/>
+<circle cx="1080" cy="90" r="20" fill="#E2E8F0"/>
+
+<!-- Stats Cards Row -->
+<rect x="340" y="160" width="240" height="140" rx="12" fill="white" stroke="#E2E8F0"/>
+<rect x="360" y="180" width="40" height="40" rx="8" fill="#EFF6FF"/>
+<path d="M370 200L380 190L390 210" stroke="#2563EB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="360" y="240" width="100" height="10" rx="5" fill="#94A3B8"/>
+<rect x="360" y="260" width="60" height="24" rx="4" fill="#F1F5F9"/>
+
+<rect x="610" y="160" width="240" height="140" rx="12" fill="white" stroke="#E2E8F0"/>
+<rect x="630" y="180" width="40" height="40" rx="8" fill="#F0FDFA"/>
+<path d="M640 200L660 200" stroke="#14B8A6" stroke-width="2" stroke-linecap="round"/>
+<path d="M650 190L650 210" stroke="#14B8A6" stroke-width="2" stroke-linecap="round"/>
+<rect x="630" y="240" width="100" height="10" rx="5" fill="#94A3B8"/>
+<rect x="630" y="260" width="60" height="24" rx="4" fill="#F1F5F9"/>
+
+<rect x="880" y="160" width="240" height="140" rx="12" fill="white" stroke="#E2E8F0"/>
+<rect x="900" y="180" width="40" height="40" rx="8" fill="#FFF7ED"/>
+<circle cx="920" cy="200" r="10" stroke="#F97316" stroke-width="2"/>
+<rect x="900" y="240" width="100" height="10" rx="5" fill="#94A3B8"/>
+<rect x="900" y="260" width="60" height="24" rx="4" fill="#F1F5F9"/>
+
+
+<!-- Main Chart Card -->
+<rect x="340" y="330" width="780" height="380" rx="12" fill="white" stroke="#E2E8F0"/>
+<rect x="370" y="360" width="150" height="20" rx="6" fill="#E2E8F0"/>
+<!-- Graph Lines -->
+<path d="M370 650 L450 600 L530 620 L610 550 L690 580 L770 500 L850 530 L930 450 L1010 480 L1090 400" stroke="#2563EB" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M370 650 L450 600 L530 620 L610 550 L690 580 L770 500 L850 530 L930 450 L1010 480 L1090 400 V700 H370 V650 Z" fill="url(#chart-gradient)"/>
+
+<!-- Floating Elements (Glassmorphism) -->
+<rect x="950" y="100" width="180" height="220" rx="12" fill="white" fill-opacity="0.9" stroke="white" stroke-width="2" filter="url(#shadow)"/>
+<rect x="970" y="120" width="40" height="40" rx="20" fill="#0A2540"/>
+<rect x="1020" y="125" width="80" height="10" rx="5" fill="#334155"/>
+<rect x="1020" y="145" width="50" height="10" rx="5" fill="#94A3B8"/>
+<rect x="970" y="180" width="140" height="10" rx="5" fill="#E2E8F0"/>
+<rect x="970" y="200" width="140" height="10" rx="5" fill="#E2E8F0"/>
+<rect x="970" y="220" width="100" height="10" rx="5" fill="#E2E8F0"/>
+<rect x="970" y="260" width="140" height="40" rx="8" fill="#2563EB"/>
+
+</svg>
