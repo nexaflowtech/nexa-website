@@ -1,96 +1,154 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { Layout, Server, Smartphone, ArrowRight, Code, Database, Globe } from "lucide-react";
+import { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Server, Smartphone, ArrowRight, Database, Globe, Layers, Zap } from "lucide-react";
 import Link from "next/link";
 
 const services = [
     {
+        id: "erp",
         title: "Enterprise ERP",
-        description: "Custom ERPNext implementations that unify your entire business logic into one scalable system.",
+        label: "Module 01",
+        description: "Custom ERPNext implementations that unify your entire business logic into one scalable system. Built for complex operational workflows and financial integrity.",
         icon: Database,
         link: "/services/erpnext",
-        colSpan: "md:col-span-2",
-        gradient: "from-blue-500 to-indigo-600"
+        gradient: "from-blue-600 to-indigo-700",
+        features: ["Financial Automation", "Supply Chain Control", "Real-time Analytics"]
     },
     {
+        id: "saas",
         title: "SaaS Development",
-        description: "Multi-tenant architectures built for scale. From MVP to IPO-ready platforms.",
+        label: "Module 02",
+        description: "Multi-tenant architectures built for global scale. We handle everything from multi-region deployment to subscription logic and security compliance.",
         icon: Server,
         link: "/services/saas",
-        colSpan: "md:col-span-1",
-        gradient: "from-purple-500 to-pink-600"
+        gradient: "from-purple-600 to-pink-700",
+        features: ["Edge Computing", "Tenant Isolation", "Usage-based Billing"]
     },
     {
+        id: "web",
         title: "Custom Web Apps",
-        description: "High-performance marketing sites and complex web applications using Next.js.",
+        label: "Module 03",
+        description: "High-performance digital platforms using Next.js and Framer Motion. We focus on speed, SEO, and conversion-optimized user experiences.",
         icon: Globe,
         link: "/services/web",
-        colSpan: "md:col-span-1",
-        gradient: "from-teal-400 to-emerald-600"
+        gradient: "from-teal-500 to-emerald-700",
+        features: ["SEO Optimization", "PWA Support", "Ultra-low Latency"]
     },
     {
+        id: "mobile",
         title: "Mobile Solutions",
-        description: "Native-feel cross-platform apps for iOS and Android using React Native / Flutter.",
+        label: "Module 04",
+        description: "Native-feel cross-platform applications for iOS and Android. Robust offline capabilities and deep hardware integration as standard.",
         icon: Smartphone,
         link: "/services/mobile",
-        colSpan: "md:col-span-2",
-        gradient: "from-orange-400 to-red-600"
+        gradient: "from-orange-500 to-red-700",
+        features: ["Biometric Auth", "Push Notifications", "Offline Engine"]
     }
 ];
 
 export default function Services() {
+    const [activeIndex, setActiveIndex] = useState(0);
+
     return (
-        <section className="py-24 bg-white" id="services">
+        <section className="py-20 bg-white overflow-hidden" id="services">
             <div className="container mx-auto px-6">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
-                    <div className="max-w-2xl">
-                        <span className="text-sm font-bold text-primary-blue tracking-widest uppercase mb-4 block">Our Capabilities</span>
-                        <h2 className="text-4xl md:text-5xl font-bold text-primary-midnight leading-tight">
-                            We Build Digital Ecosystems <br /> Not Just Websites.
-                        </h2>
-                    </div>
-                    <Link href="/services" className="group flex items-center gap-2 text-lg font-semibold text-primary-midnight hover:text-primary-blue transition-colors">
-                        View All Services
-                        <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-                    </Link>
+                {/* Header Section - Compact */}
+                <div className="mb-16">
+                    <span className="text-[10px] font-black text-primary-blue tracking-[0.3em] uppercase mb-4 block font-display">
+                        System Capabilities
+                    </span>
+                    <h2 className="text-4xl md:text-5xl font-display font-black text-primary-midnight tracking-tight">
+                        Engineering Digital <span className="text-primary-blue underline decoration-blue-100 underline-offset-8">Foundations.</span>
+                    </h2>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    {services.map((service, index) => (
-                        <motion.div
-                            key={index}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            whileHover={{ y: -5 }}
-                            transition={{ duration: 0.4, delay: index * 0.1 }}
-                            viewport={{ once: true }}
-                            className={`${service.colSpan} group relative overflow-hidden rounded-3xl bg-neutral-bg p-8 border border-gray-100 shadow-sm hover:shadow-2xl transition-all duration-300`}
-                        >
-                            <div className={`absolute top-0 right-0 w-64 h-64 bg-gradient-to-br ${service.gradient} opacity-[0.05] group-hover:opacity-[0.1] rounded-full blur-3xl -mr-16 -mt-16 transition-opacity duration-500`} />
-
-                            <div className="relative z-10 h-full flex flex-col justify-between">
-                                <div>
-                                    <div className={`w-14 h-14 rounded-2xl bg-gradient-to-br ${service.gradient} flex items-center justify-center text-white mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                                        <service.icon size={26} />
-                                    </div>
-                                    <h3 className="text-2xl font-bold text-primary-midnight mb-3">
-                                        {service.title}
-                                    </h3>
-                                    <p className="text-gray-600 leading-relaxed text-lg mb-8">
-                                        {service.description}
-                                    </p>
+                <div className="flex flex-col lg:flex-row gap-8 lg:items-center min-h-[500px]">
+                    {/* Left Panel: Selectors */}
+                    <div className="w-full lg:w-1/3 flex flex-col gap-3">
+                        {services.map((service, index) => (
+                            <button
+                                key={service.id}
+                                onClick={() => setActiveIndex(index)}
+                                className={`group relative flex items-center gap-5 p-6 rounded-2xl transition-all duration-500 text-left border ${activeIndex === index
+                                        ? "bg-primary-midnight text-white border-primary-midnight shadow-2xl scale-[1.02] z-10"
+                                        : "bg-white text-gray-500 border-gray-100 hover:border-blue-100 hover:bg-blue-50/30"
+                                    }`}
+                            >
+                                <div className={`w-12 h-12 rounded-xl flex items-center justify-center transition-colors duration-500 ${activeIndex === index ? "bg-primary-blue text-white" : "bg-gray-50 text-gray-400 group-hover:bg-blue-100 group-hover:text-primary-blue"
+                                    }`}>
+                                    <service.icon size={22} />
                                 </div>
+                                <div className="flex-grow">
+                                    <div className={`text-[9px] font-black uppercase tracking-widest mb-1 ${activeIndex === index ? "text-blue-300" : "text-gray-400"}`}>
+                                        {service.label}
+                                    </div>
+                                    <div className="text-lg font-bold tracking-tight">
+                                        {service.title}
+                                    </div>
+                                </div>
+                                <ArrowRight size={16} className={`transition-all duration-500 ${activeIndex === index ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"}`} />
+                            </button>
+                        ))}
+                    </div>
 
-                                <Link
-                                    href={service.link}
-                                    className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-gray-200 bg-white text-gray-400 group-hover:bg-primary-midnight group-hover:border-primary-midnight group-hover:text-white transition-all duration-300"
-                                >
-                                    <ArrowRight size={20} className="-rotate-45 group-hover:rotate-0 transition-transform duration-300" />
-                                </Link>
-                            </div>
-                        </motion.div>
-                    ))}
+                    {/* Right Panel: Content Display */}
+                    <div className="w-full lg:w-2/3 h-full">
+                        <AnimatePresence mode="wait">
+                            <motion.div
+                                key={activeIndex}
+                                initial={{ opacity: 0, x: 20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                exit={{ opacity: 0, x: -20 }}
+                                transition={{ duration: 0.5, ease: "circOut" }}
+                                className="relative bg-neutral-bg rounded-[2.5rem] p-8 md:p-14 border border-white shadow-premium overflow-hidden h-full flex flex-col"
+                            >
+                                {/* Decorative Gradient Blobs */}
+                                <div className={`absolute -top-20 -right-20 w-80 h-80 bg-gradient-to-br ${services[activeIndex].gradient} opacity-10 blur-[100px] rounded-full`} />
+                                <div className={`absolute -bottom-20 -left-20 w-80 h-80 bg-gradient-to-tr ${services[activeIndex].gradient} opacity-5 blur-[100px] rounded-full`} />
+
+                                <div className="relative z-10 flex flex-col h-full">
+                                    <div className="flex items-center gap-4 mb-8 text-primary-blue">
+                                        <Layers size={24} className="animate-pulse" />
+                                        <div className="h-px flex-grow bg-blue-100" />
+                                    </div>
+
+                                    <h3 className="text-3xl md:text-5xl font-display font-black text-primary-midnight mb-6 leading-none tracking-tighter">
+                                        {services[activeIndex].title}
+                                    </h3>
+
+                                    <p className="text-lg md:text-xl text-neutral-text-light leading-relaxed mb-10 max-w-xl font-medium">
+                                        {services[activeIndex].description}
+                                    </p>
+
+                                    <div className="grid md:grid-cols-3 gap-4 mb-10">
+                                        {services[activeIndex].features.map((feature, i) => (
+                                            <div key={i} className="flex items-center gap-3 p-4 bg-white/50 backdrop-blur-sm rounded-xl border border-white">
+                                                <Zap size={14} className="text-primary-blue" />
+                                                <span className="text-xs font-bold text-primary-midnight uppercase tracking-wider">{feature}</span>
+                                            </div>
+                                        ))}
+                                    </div>
+
+                                    <div className="mt-auto pt-6 flex flex-col sm:flex-row gap-6 items-center">
+                                        <Link
+                                            href={services[activeIndex].link}
+                                            className="w-full sm:w-auto px-10 py-5 bg-primary-blue text-white rounded-2xl font-black text-sm uppercase tracking-widest hover:bg-blue-700 transition-all hover:scale-105 shadow-xl shadow-blue-500/20 text-center"
+                                        >
+                                            View Solution Details
+                                        </Link>
+                                        <Link
+                                            href="/contact"
+                                            className="text-sm font-bold text-primary-midnight hover:text-primary-blue transition-colors underline underline-offset-4"
+                                        >
+                                            Consult an Architect
+                                        </Link>
+                                    </div>
+                                </div>
+                            </motion.div>
+                        </AnimatePresence>
+                    </div>
                 </div>
             </div>
         </section>
