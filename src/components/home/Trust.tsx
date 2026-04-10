@@ -23,12 +23,12 @@ export default function Trust() {
         <section className="py-16 bg-gradient-to-b from-white to-neutral-bg border-b border-gray-100 overflow-hidden">
             <div className="container mx-auto px-6">
                 {/* Header */}
-                <div className="text-center mb-12">
-                    <span className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-2 block">
-                        Powered By
+                <div className="text-center mb-16">
+                    <span className="text-[10px] font-black text-gray-400 uppercase tracking-[0.2em] mb-3 block font-display">
+                        Global Technical Hub
                     </span>
-                    <h3 className="text-2xl md:text-3xl font-bold text-primary-midnight">
-                        Our Technology Partners
+                    <h3 className="text-3xl md:text-5xl font-display font-black text-primary-midnight tracking-tight">
+                        Powering <span className="text-primary-blue">Transformation.</span>
                     </h3>
                 </div>
 

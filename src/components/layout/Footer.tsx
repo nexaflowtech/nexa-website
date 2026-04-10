@@ -8,8 +8,12 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
                     {/* Brand Column */}
                     <div className="space-y-4">
-                        <Link href="/" className="text-2xl font-bold text-white">
-                            NexaFlow<span className="text-primary-blue">Tech</span>
+                        <Link href="/" className="flex items-center">
+                            <img
+                                src="/logo.png"
+                                alt="NexaFlowTech Logo"
+                                className="h-10 w-auto object-contain brightness-0 invert"
+                            />
                         </Link>
                         <p className="text-gray-400 text-sm leading-relaxed">
                             Empowering businesses with smart ERP solutions, custom software, and scalable digital infrastructure.

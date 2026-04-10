@@ -21,14 +21,41 @@ export default function ContactPage() {
         });
     };
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
-        // Simulate API call
-        setTimeout(() => {
+
+        try {
+            const response = await fetch("https://api.web3forms.com/submit", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    Accept: "application/json",
+                },
+                body: JSON.stringify({
+                    access_key: "a2e95ac0-5e3c-49a9-84ed-e6d29da1c791", // Replace with actual key
+                    name: formData.name,
+                    email: formData.email,
+                    company: formData.company,
+                    message: formData.message,
+                    subject: `New Contact Form Submission from ${formData.name}`,
+                    from_name: "NexaFlowTech Website",
+                }),
+            });
+
+            const result = await response.json();
+            if (result.success) {
+                setSubmitted(true);
+                setFormData({ name: "", email: "", company: "", message: "" });
+            } else {
+                alert("Something went wrong. Please try again or email us directly.");
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            alert("Connection error. Please check your internet and try again.");
+        } finally {
             setIsSubmitting(false);
-            setSubmitted(true);
-        }, 1500);
+        }
     };
 
     return (

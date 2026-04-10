@@ -39,41 +39,41 @@ export default function Hero() {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, ease: "easeOut" }}
                         >
-                            <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full bg-white border border-gray-100 shadow-sm">
-                                <span className="relative flex h-2.5 w-2.5">
+                            <div className="inline-flex items-center gap-2 px-4 py-2 mb-8 rounded-full bg-white border border-gray-100 shadow-tactile">
+                                <span className="relative flex h-2 w-2">
                                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-teal opacity-75"></span>
-                                    <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary-teal"></span>
+                                    <span className="relative inline-flex rounded-full h-2 w-2 bg-secondary-teal"></span>
                                 </span>
-                                <span className="text-sm font-semibold text-primary-midnight tracking-wide">
-                                    Next-Gen Digital Transformation
+                                <span className="text-[10px] font-black text-primary-midnight tracking-[0.2em] uppercase opacity-70 font-display">
+                                    Next-Gen Digital Systems
                                 </span>
                             </div>
 
-                            <h1 className="text-5xl lg:text-7xl font-bold leading-[1.1] text-primary-midnight mb-8 tracking-tight">
-                                We Engineer <br className="hidden lg:block" />
+                            <h1 className="text-5xl lg:text-8xl font-display font-black leading-[0.95] text-primary-midnight mb-8 tracking-tighter">
+                                Engineering <br />
                                 <span className="text-primary-blue relative inline-block">
-                                    Digital Excellence
-                                    <svg className="absolute w-full h-3 -bottom-1 left-0 text-blue-200 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
-                                        <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="none" />
+                                    Excellence.
+                                    <svg className="absolute w-full h-4 -bottom-2 left-0 text-blue-100 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
+                                        <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="12" fill="none" />
                                     </svg>
                                 </span>
                             </h1>
 
-                            <p className="text-xl text-neutral-text-light mb-10 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-                                NexaFlowTech builds enterprise-grade ERP systems and scalable web platforms that turn complex operations into competitive advantages.
+                            <p className="text-lg md:text-xl text-neutral-text-light mb-12 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
+                                NexaFlowTech designs and engineers high-performance digital ecosystems that transform complex enterprise operations into competitive advantages.
                             </p>
 
-                            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-5">
+                            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                                 <Link href="/contact" className="w-full sm:w-auto">
-                                    <Button size="lg" className="w-full h-14 px-8 text-base font-bold shadow-xl shadow-blue-600/20 hover:shadow-blue-600/30 hover:-translate-y-1 transition-all duration-300">
-                                        Start Project
+                                    <Button size="lg" className="h-14 px-10 rounded-2xl shadow-blue-500/10 hover:shadow-blue-500/20">
+                                        Initiate Project
                                         <ArrowRight size={20} className="ml-2" />
                                     </Button>
                                 </Link>
                                 <Link href="/services" className="w-full sm:w-auto">
-                                    <Button variant="outline" size="lg" className="w-full h-14 px-8 text-base font-semibold group bg-white/50 backdrop-blur-md border-gray-200 hover:bg-white hover:border-gray-300">
-                                        <Play size={18} className="mr-2 fill-current text-primary-midnight group-hover:text-primary-blue transition-colors" />
-                                        See How It Works
+                                    <Button variant="outline" size="lg" className="h-14 px-10 rounded-2xl border-gray-100 bg-white/50 backdrop-blur-md hover:bg-white hover:border-gray-200">
+                                        <Play size={18} className="mr-2 fill-current" />
+                                        Case Studies
                                     </Button>
                                 </Link>
                             </div>
