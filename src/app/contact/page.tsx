@@ -91,8 +91,8 @@ export default function ContactPage() {
                             </div>
                             <div>
                                 <h3 className="text-lg font-semibold text-gray-900">Email Us</h3>
-                                <p className="text-gray-600">hello@nexaflowtech.com</p>
-                                <p className="text-gray-600">support@nexaflowtech.com</p>
+                                <p className="text-gray-600">business@nexaflowtech.com</p>
+                                <p className="text-gray-600">info@nexaflowtech.com</p>
                             </div>
                         </div>
 

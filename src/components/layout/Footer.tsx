@@ -19,7 +19,7 @@ export default function Footer() {
                             Empowering businesses with smart ERP solutions, custom software, and scalable digital infrastructure.
                         </p>
                         <div className="flex space-x-4 pt-2">
-                            <a href="#" className="text-gray-400 hover:text-primary-blue transition-colors">
+                            <a href="https://www.linkedin.com/company/nexaflowtech" className="text-gray-400 hover:text-primary-blue transition-colors">
                                 <Linkedin size={20} />
                             </a>
                             <a href="#" className="text-gray-400 hover:text-primary-blue transition-colors">
@@ -28,7 +28,7 @@ export default function Footer() {
                             <a href="#" className="text-gray-400 hover:text-primary-blue transition-colors">
                                 <Facebook size={20} />
                             </a>
-                            <a href="#" className="text-gray-400 hover:text-primary-blue transition-colors">
+                            <a href="https://www.instagram.com/nexaflowtech007?igsh=MW5zcXRra2Q2bHF0cQ==" className="text-gray-400 hover:text-primary-blue transition-colors">
                                 <Instagram size={20} />
                             </a>
                         </div>
@@ -70,7 +70,7 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center space-x-3">
                                 <Mail size={18} className="text-primary-blue" />
-                                <span>hello@nexaflowtech.com</span>
+                                <span>info@nexaflowtech.com</span>
                             </li>
                         </ul>
                     </div>
