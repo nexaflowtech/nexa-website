@@ -62,11 +62,11 @@ export default function Footer() {
                         <ul className="space-y-4 text-sm text-gray-400">
                             <li className="flex items-start space-x-3">
                                 <MapPin size={18} className="text-primary-blue mt-0.5" />
-                                <span>123 Tech Park, Innovation Hub,<br />Bangalore, India 560100</span>
+                                <span>545 KA NK, Gayatri Vihar, Phase 2,<br /> Lucknow, Uttar Pradesh, 226011.</span>
                             </li>
                             <li className="flex items-center space-x-3">
                                 <Phone size={18} className="text-primary-blue" />
-                                <span>+91 98765 43210</span>
+                                <span>+91 8382906349</span>
                             </li>
                             <li className="flex items-center space-x-3">
                                 <Mail size={18} className="text-primary-blue" />

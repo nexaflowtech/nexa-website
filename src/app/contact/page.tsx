@@ -81,7 +81,7 @@ export default function ContactPage() {
                             </div>
                             <div>
                                 <h3 className="text-lg font-semibold text-gray-900">Our Office</h3>
-                                <p className="text-gray-600">123 Tech Park, Innovation Hub,<br />Bangalore, India 560100</p>
+                                <p className="text-gray-600">545 KA NK, Gayatri Vihar, Phase 2,<br /> Lucknow, Uttar Pradesh, 226011.</p>
                             </div>
                         </div>
 
@@ -102,7 +102,7 @@ export default function ContactPage() {
                             </div>
                             <div>
                                 <h3 className="text-lg font-semibold text-gray-900">Call Us</h3>
-                                <p className="text-gray-600">+91 98765 43210</p>
+                                <p className="text-gray-600">+91 83829 06349</p>
                                 <p className="text-gray-600">Mon-Fri: 9am - 6pm IST</p>
                             </div>
                         </div>
