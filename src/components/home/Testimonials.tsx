@@ -6,10 +6,10 @@ import Image from "next/image";
 
 const testimonials = [
     {
-        quote: "NexaFlowTech transformed our fragmented supply chain into a unified digital ecosystem. The ERPNext implementation saved us 30% in operational costs within the first quarter.",
-        author: "Sarah Jenkins",
-        role: "CTO, Global Logistics",
-        image: "/images/testimonials/avatar-1.jpg" // Placeholder path
+        quote: "NexaFlowtech successfully implemented Frappe ERPNext for us, automating 100% of our manufacturing, inventory, and accounting processes. This significantly reduced manual work and improved overall efficiency. Highly recommended!",
+        author: "Anmol Pandey",
+        role: "Founder's Office, Evoa Consumer Private Limited",
+        image: "/images/anmol.jpeg" // Placeholder path
     },
     {
         quote: "We needed a partner who understood both startup agility and enterprise security. NexaFlow delivered a scalable Fintech platform that helped us secure Series B funding.",
