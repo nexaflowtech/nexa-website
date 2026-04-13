@@ -9,7 +9,7 @@ const testimonials = [
         quote: "NexaFlowtech successfully implemented Frappe ERPNext for us, automating 100% of our manufacturing, inventory, and accounting processes. This significantly reduced manual work and improved overall efficiency. Highly recommended!",
         author: "Anmol Pandey",
         role: "Founder's Office, Evoa Consumer Private Limited",
-        image: "/images/anmol.jpeg" // Placeholder path
+        image: "/anmol.jpeg" // Placeholder path
     },
     {
         quote: "We needed a partner who understood both startup agility and enterprise security. NexaFlow delivered a scalable Fintech platform that helped us secure Series B funding.",
@@ -53,11 +53,7 @@ export default function Testimonials() {
 
                             <div className="flex items-center gap-4">
                                 <div className="w-12 h-12 rounded-full bg-gray-200 overflow-hidden relative">
-                                    {/* Placeholder Avatar if image missing */}
-                                    <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-teal-400 flex items-center justify-center text-white font-bold text-lg">
-                                        {item.author.charAt(0)}
-                                    </div>
-                                    {/* <Image src={item.image} alt={item.author} fill className="object-cover" /> */}
+                                    <Image src={item.image} alt={item.author} fill className="object-cover" />
                                 </div>
                                 <div>
                                     <h4 className="font-bold text-primary-midnight">{item.author}</h4>
