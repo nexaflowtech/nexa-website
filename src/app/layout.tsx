@@ -59,6 +59,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.png",
     shortcut: "/favicon.png",
+    apple: "/apple-icon.png",
   },
   openGraph: {
     title: "ERPNext, Frappe & Custom Software Development Company | NexaFlowTech",
