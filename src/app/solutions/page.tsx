@@ -3,8 +3,17 @@ import Link from "next/link";
 import Button from "@/components/ui/Button";
 
 export const metadata = {
-    title: "Solutions - NexaFlowTech",
-    description: "Industry-specific ERP and software solutions for manufacturing, retail, healthcare, and more.",
+    title: "Enterprise Software & ERP Solutions by Industry | NexaFlowTech",
+    description: "Industry-specific software solutions for manufacturing, retail, healthcare, education, and logistics. NexaFlowTech delivers custom ERPNext and SaaS platforms tailored to your business needs.",
+    alternates: {
+        canonical: "https://nexaflowtech.com/solutions",
+    },
+    openGraph: {
+        title: "Industry Software Solutions | ERP, SaaS & Automation | NexaFlowTech",
+        description: "Custom software solutions for manufacturing, retail, healthcare, and startups. Scale your business with NexaFlowTech's enterprise expertise.",
+        url: "https://nexaflowtech.com/solutions",
+        type: "website",
+    },
 };
 
 const solutions = [
@@ -51,9 +60,9 @@ export default function SolutionsPage() {
         <div className="bg-neutral-bg min-h-screen pb-20">
             <section className="bg-primary-midnight text-white py-20 text-center">
                 <div className="container mx-auto px-6">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-6">Industry Solutions</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold mb-6">Enterprise Software Solutions</h1>
                     <p className="text-xl text-blue-200 max-w-2xl mx-auto">
-                        Tailored software solutions designed to meet the unique challenges of your industry.
+                        High-performance, industry-specific <strong className="text-white">ERP software and custom applications</strong> designed to solve complex business challenges across India and global markets.
                     </p>
                 </div>
             </section>

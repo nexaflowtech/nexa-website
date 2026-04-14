@@ -49,31 +49,33 @@ export default function Hero() {
                                 </span>
                             </div>
 
-                            <h1 className="text-5xl lg:text-8xl font-display font-black leading-[0.95] text-primary-midnight mb-8 tracking-tighter">
-                                Engineering <br />
+                            <h1 className="text-5xl lg:text-7xl font-display font-black leading-[0.95] text-primary-midnight mb-8 tracking-tighter">
+                                Custom Software <br />
                                 <span className="text-primary-blue relative inline-block">
-                                    Excellence.
+                                    Development
                                     <svg className="absolute w-full h-4 -bottom-2 left-0 text-blue-100 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
                                         <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="12" fill="none" />
                                     </svg>
                                 </span>
+                                <br />
+                                Company in India
                             </h1>
 
                             <p className="text-lg md:text-xl text-neutral-text-light mb-12 max-w-xl mx-auto lg:mx-0 leading-relaxed font-medium">
-                                NexaFlowTech designs and engineers high-performance digital ecosystems that transform complex enterprise operations into competitive advantages.
+                                NexaFlowTech delivers enterprise-grade <strong className="text-primary-midnight font-semibold">ERP software, SaaS platforms, mobile apps</strong> and custom web solutions for startups and enterprises in India, USA, UK, UAE & beyond.
                             </p>
 
                             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                                 <Link href="/contact" className="w-full sm:w-auto">
                                     <Button size="lg" className="h-14 px-10 rounded-2xl shadow-blue-500/10 hover:shadow-blue-500/20">
-                                        Initiate Project
+                                        Get Free Consultation
                                         <ArrowRight size={20} className="ml-2" />
                                     </Button>
                                 </Link>
                                 <Link href="/services" className="w-full sm:w-auto">
                                     <Button variant="outline" size="lg" className="h-14 px-10 rounded-2xl border-gray-100 bg-white/50 backdrop-blur-md hover:bg-white hover:border-gray-200">
                                         <Play size={18} className="mr-2 fill-current" />
-                                        Case Studies
+                                        Explore Services
                                     </Button>
                                 </Link>
                             </div>

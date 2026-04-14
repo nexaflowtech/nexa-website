@@ -25,10 +25,10 @@ export default function Trust() {
                 {/* Header */}
                 <div className="text-center mb-16">
                     <span className="text-[10px] font-black text-gray-400 uppercase tracking-[0.2em] mb-3 block font-display">
-                        Global Technical Hub
+                        Our Technology Stack
                     </span>
                     <h3 className="text-3xl md:text-5xl font-display font-black text-primary-midnight tracking-tight">
-                        Powering <span className="text-primary-blue">Transformation.</span>
+                        Built with <span className="text-primary-blue">World-Class Tech.</span>
                     </h3>
                 </div>
 
@@ -90,7 +90,7 @@ export default function Trust() {
 
                 {/* Subtext */}
                 <p className="text-center text-sm text-gray-500 mt-8 max-w-2xl mx-auto">
-                    We leverage industry-leading technologies to build scalable, secure, and future-ready solutions.
+                    We utilize industry-leading technologies to deliver secure <strong className="text-primary-midnight">custom software and ERP solutions</strong> for clients across India, USA, UK, UAE, and Australia.
                 </p>
             </div>
         </section>

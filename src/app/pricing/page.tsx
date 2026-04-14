@@ -3,8 +3,17 @@ import Button from "@/components/ui/Button";
 import { Check } from "lucide-react";
 
 export const metadata = {
-    title: "Pricing - NexaFlowTech",
-    description: "Transparent pricing plans for startups, SMEs, and enterprises.",
+    title: "Software Development Pricing | ERP & SaaS Solutions | NexaFlowTech",
+    description: "Transparent pricing for custom ERP software, SaaS platform development, and enterprise automation. Startup, SME, and Enterprise plans tailored for global growth.",
+    alternates: {
+        canonical: "https://nexaflowtech.com/pricing",
+    },
+    openGraph: {
+        title: "Software Development Pricing Plans | NexaFlowTech",
+        description: "Flexible pricing models for custom software, ERPNext, and enterprise web solutions in India, USA, UK, UAE & beyond.",
+        url: "https://nexaflowtech.com/pricing",
+        type: "website",
+    },
 };
 
 const plans = [
@@ -63,9 +72,9 @@ export default function PricingPage() {
         <div className="bg-neutral-bg min-h-screen pb-20">
             <section className="bg-primary-midnight text-white py-20 text-center">
                 <div className="container mx-auto px-6">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-6">Simple, Transparent Pricing</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold mb-6">Software Development Pricing & Plans</h1>
                     <p className="text-xl text-blue-200 max-w-2xl mx-auto">
-                        Choose the plan that fits your stage of growth. No hidden fees.
+                        Transparent, custom-fit pricing for <strong className="text-white">ERP software, SaaS platforms</strong>, and enterprise digital transformation. Global solutions from Lucknow, India.
                     </p>
                 </div>
             </section>

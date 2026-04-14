@@ -189,19 +189,65 @@ export async function generateStaticParams() {
     }));
 }
 
+// Per-service SEO metadata map
+const serviceSEOMeta: Record<string, { title: string; description: string }> = {
+    "erpnext": {
+        title: "ERP Software Development & ERPNext Implementation Company India | NexaFlowTech",
+        description:
+            "NexaFlowTech delivers expert ERPNext implementation and ERP software development for manufacturing, retail, and services businesses. Trusted ERPNext partner in India serving global clients.",
+    },
+    "frappe": {
+        title: "Frappe Development Company India | Custom Frappe Apps & Integration | NexaFlowTech",
+        description:
+            "Custom Frappe framework development, app creation, API integrations, and ERPNext customisation. NexaFlowTech is a leading Frappe development partner in India.",
+    },
+    "saas": {
+        title: "SaaS Application Development Company India | Custom SaaS Platform | NexaFlowTech",
+        description:
+            "Build scalable, multi-tenant SaaS platforms with NexaFlowTech. End-to-end SaaS development including architecture, billing, authentication & global cloud deployment.",
+    },
+    "web": {
+        title: "Custom Web Application Development Company India | Next.js & React | NexaFlowTech",
+        description:
+            "High-performance web application development using Next.js and React. NexaFlowTech builds fast, SEO-optimized, conversion-focused web platforms for global businesses.",
+    },
+    "mobile": {
+        title: "Mobile App Development Company India | iOS & Android Apps | NexaFlowTech",
+        description:
+            "Cross-platform and native mobile app development for iOS and Android using React Native and Flutter. NexaFlowTech builds secure, offline-capable business apps.",
+    },
+    "amc": {
+        title: "Software AMC & Annual Maintenance Contracts India | NexaFlowTech",
+        description:
+            "Reliable software maintenance, security monitoring, and priority support contracts for ERP, web, and mobile systems. NexaFlowTech AMC services for businesses in India.",
+    },
+};
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { slug } = await params;
     const service = serviceData[slug];
 
     if (!service) {
-        return {
-            title: "Service Not Found",
-        };
+        return { title: "Service Not Found | NexaFlowTech" };
     }
 
-    return {
-        title: `${service.title} - NexaFlowTech Services`,
+    const seoMeta = serviceSEOMeta[slug] ?? {
+        title: `${service.title} - NexaFlowTech Software Development Services`,
         description: service.description,
+    };
+
+    return {
+        title: seoMeta.title,
+        description: seoMeta.description,
+        alternates: {
+            canonical: `https://nexaflowtech.com/services/${slug}`,
+        },
+        openGraph: {
+            title: seoMeta.title,
+            description: seoMeta.description,
+            url: `https://nexaflowtech.com/services/${slug}`,
+            type: "website",
+        },
     };
 }
 

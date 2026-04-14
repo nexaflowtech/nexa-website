@@ -4,8 +4,19 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
-    title: "Services - NexaFlowTech",
-    description: "Comprehensive ERP, web, and mobile development services for modern businesses.",
+    title: "Software Development Services | ERP, SaaS, Mobile & Web Apps | NexaFlowTech",
+    description:
+        "Explore NexaFlowTech's full range of software development services: ERPNext implementation, SaaS platform development, custom web applications, mobile apps, and business automation for startups and enterprises worldwide.",
+    alternates: {
+        canonical: "https://nexaflowtech.com/services",
+    },
+    openGraph: {
+        title: "Software Development Services | NexaFlowTech India",
+        description:
+            "ERP, SaaS, web, and mobile development services for businesses in India, USA, UK, UAE, Canada & Australia.",
+        url: "https://nexaflowtech.com/services",
+        type: "website",
+    },
 };
 
 const services = [
@@ -100,9 +111,15 @@ export default function ServicesPage() {
         <div className="bg-neutral-bg min-h-screen pb-20">
             <section className="bg-primary-midnight text-white py-20 text-center">
                 <div className="container mx-auto px-6">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-6">Our Services</h1>
-                    <p className="text-xl text-blue-200 max-w-2xl mx-auto">
-                        From ERP implementation to custom software, we build the digital infrastructure your business needs to thrive.
+                    <h1 className="text-4xl md:text-5xl font-bold mb-6">
+                        Software Development Services in India
+                    </h1>
+                    <p className="text-xl text-blue-200 max-w-2xl mx-auto mb-4">
+                        From ERP implementation and SaaS development to custom web apps and mobile solutions — NexaFlowTech builds the digital
+                        infrastructure your business needs to thrive globally.
+                    </p>
+                    <p className="text-blue-300 text-sm">
+                        Serving clients in India, USA, UK, UAE, Canada & Australia
                     </p>
                 </div>
             </section>

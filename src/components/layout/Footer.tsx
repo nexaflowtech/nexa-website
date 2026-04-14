@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <footer className="bg-neutral-900 text-white pt-16 pb-8">
             <div className="container mx-auto px-6">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
                     {/* Brand Column */}
                     <div className="space-y-4">
                         <Link href="/" className="flex items-center">
@@ -16,7 +16,7 @@ export default function Footer() {
                             />
                         </Link>
                         <p className="text-gray-400 text-sm leading-relaxed">
-                            Empowering businesses with smart ERP solutions, custom software, and scalable digital infrastructure.
+                            NexaFlowTech is a premier <strong className="text-gray-300">software development company in India</strong>, delivering custom ERP solutions, SaaS platforms, and enterprise automation for businesses in USA, UK, UAE & Australia.
                         </p>
                         <div className="flex space-x-4 pt-2">
                             <a href="https://www.linkedin.com/company/nexaflowtech" className="text-gray-400 hover:text-primary-blue transition-colors">
@@ -47,12 +47,25 @@ export default function Footer() {
 
                     {/* Services */}
                     <div>
-                        <h3 className="text-lg font-semibold mb-6 text-white">Services</h3>
+                        <h3 className="text-lg font-semibold mb-6 text-white">Software Services</h3>
                         <ul className="space-y-3 text-sm text-gray-400">
                             <li><Link href="/services/erpnext" className="hover:text-primary-blue transition-colors">ERPNext Implementation</Link></li>
-                            <li><Link href="/services/frappe" className="hover:text-primary-blue transition-colors">Frappe Development</Link></li>
-                            <li><Link href="/services/web" className="hover:text-primary-blue transition-colors">Custom Web Apps</Link></li>
-                            <li><Link href="/services/saas" className="hover:text-primary-blue transition-colors">SaaS Development</Link></li>
+                            <li><Link href="/services/frappe" className="hover:text-primary-blue transition-colors">Frappe Framework Development</Link></li>
+                            <li><Link href="/services/saas" className="hover:text-primary-blue transition-colors">SaaS Platform Development</Link></li>
+                            <li><Link href="/services/web" className="hover:text-primary-blue transition-colors">Custom Web App Development</Link></li>
+                            <li><Link href="/services/mobile" className="hover:text-primary-blue transition-colors">Mobile App Development</Link></li>
+                        </ul>
+                    </div>
+
+                    {/* Solutions */}
+                    <div>
+                        <h3 className="text-lg font-semibold mb-6 text-white">Business Solutions</h3>
+                        <ul className="space-y-3 text-sm text-gray-400">
+                            <li><Link href="/solutions" className="hover:text-primary-blue transition-colors">Manufacturing ERP</Link></li>
+                            <li><Link href="/solutions" className="hover:text-primary-blue transition-colors">Retail Management</Link></li>
+                            <li><Link href="/solutions" className="hover:text-primary-blue transition-colors">Healthcare Software</Link></li>
+                            <li><Link href="/solutions" className="hover:text-primary-blue transition-colors">Education & LMS</Link></li>
+                            <li><Link href="/solutions" className="hover:text-primary-blue transition-colors">Logistics & Supply Chain</Link></li>
                         </ul>
                     </div>
 
