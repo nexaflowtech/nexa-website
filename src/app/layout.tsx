@@ -247,6 +247,18 @@ const organizationSchema = {
         }
       ]
     },
+    {
+      "@type": "Service",
+      "serviceType": "ERPNext Implementation and Custom Software Development",
+      "provider": {
+        "@id": "https://nexaflowtech.com/#organization"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Worldwide"
+      },
+      "description": "NexaFlowTech provides ERPNext implementation, Frappe development, SaaS platforms, CRM systems and custom enterprise software solutions for startups and businesses globally."
+    },
   ],
 };
 
