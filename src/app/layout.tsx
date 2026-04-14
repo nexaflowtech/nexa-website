@@ -202,6 +202,51 @@ const organizationSchema = {
         "query-input": "required name=search_term_string",
       },
     },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What ERP solutions does NexaFlowTech provide?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "NexaFlowTech provides ERPNext implementation, customization, integration and support services for startups, SMEs and enterprises."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer custom software development services?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, NexaFlowTech builds custom web applications, SaaS platforms and enterprise automation solutions tailored to business workflows."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does NexaFlowTech serve international clients?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, NexaFlowTech delivers ERP, SaaS and custom software solutions to clients across the USA, UK, UAE, Canada, Australia and India."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does ERPNext implementation take?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "ERPNext implementation timelines typically range from 2 to 8 weeks depending on customization requirements and business complexity."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can NexaFlowTech integrate ERPNext with existing systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, NexaFlowTech integrates ERPNext with CRM systems, payment gateways, inventory tools and third-party business platforms."
+          }
+        }
+      ]
+    },
   ],
 };
 
