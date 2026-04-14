@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     template: "%s | NexaFlowTech",
   },
   description:
-    "NexaFlowTech delivers ERP software development, SaaS platforms, custom web applications and enterprise automation solutions for startups, SMEs and enterprises in India, USA, UK, UAE, Canada & Australia.",
+    "NexaFlowTech provides ERPNext implementation, Frappe development, SaaS platforms, CRM systems and custom software solutions for startups, SMEs and enterprises worldwide.",
   keywords: [
     "ERP software development company India",
     "SaaS development company",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "NexaFlowTech | ERP, SaaS & Custom Software Development Company India",
     description:
-      "ERP software development, SaaS platforms, and custom enterprise solutions for global clients. Based in Lucknow, India. Serving USA, UK, UAE, Canada & Australia.",
+      "NexaFlowTech provides ERPNext implementation, Frappe development, SaaS platforms, CRM systems and custom software solutions worldwide.",
     url: "https://nexaflowtech.com",
     siteName: "NexaFlowTech",
     images: [
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "NexaFlowTech | ERP, SaaS & Custom Software Development Company India",
     description:
-      "Custom ERP, SaaS and enterprise software development services for businesses worldwide. Based in Lucknow, India.",
+      "Custom ERPNext, Frappe, and SaaS platform development services for businesses worldwide. Based in Lucknow, India.",
     images: ["/og-image.png"],
     creator: "@nexaflowtech",
   },
