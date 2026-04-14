@@ -25,11 +25,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://nexaflowtech.com"),
   title: {
-    default: "NexaFlowTech | ERP, SaaS & Custom Software Development Company India",
+    default: "ERPNext, Frappe & Custom Software Development Company | NexaFlowTech",
     template: "%s | NexaFlowTech",
   },
   description:
-    "NexaFlowTech provides ERPNext implementation, Frappe development, SaaS platforms, CRM systems and custom software solutions for startups, SMEs and enterprises worldwide.",
+    "NexaFlowTech provides ERPNext implementation, Frappe development, SaaS platforms, CRM systems and custom software development services for startups and enterprises worldwide.",
   keywords: [
     "ERP software development company India",
     "SaaS development company",
@@ -61,9 +61,9 @@ export const metadata: Metadata = {
     shortcut: "/favicon.png",
   },
   openGraph: {
-    title: "NexaFlowTech | ERP, SaaS & Custom Software Development Company India",
+    title: "ERPNext, Frappe & Custom Software Development Company | NexaFlowTech",
     description:
-      "NexaFlowTech provides ERPNext implementation, Frappe development, SaaS platforms, CRM systems and custom software solutions worldwide.",
+      "NexaFlowTech provides ERPNext implementation, Frappe development, SaaS platforms, CRM systems and custom software development services worldwide.",
     url: "https://nexaflowtech.com",
     siteName: "NexaFlowTech",
     images: [
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "NexaFlowTech | ERP, SaaS & Custom Software Development Company India",
+    title: "ERPNext, Frappe & Custom Software Development Company | NexaFlowTech",
     description:
       "Custom ERPNext, Frappe, and SaaS platform development services for businesses worldwide. Based in Lucknow, India.",
     images: ["/og-image.png"],
