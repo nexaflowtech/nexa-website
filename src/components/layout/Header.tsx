@@ -67,7 +67,7 @@ export default function Header() {
                     ))}
                     <button onClick={openCalendly} className="relative group flex items-center justify-center">
                         <div className="absolute -inset-1 bg-gradient-to-r from-primary-blue via-teal-400 to-primary-blue rounded-lg blur opacity-40 group-hover:opacity-75 transition duration-500 animate-pulse"></div>
-                        <Button size="md" className="relative h-11 flex items-center gap-2 bg-primary-midnight text-white hover:bg-gray-900 border border-transparent hover:shadow-lg hover:shadow-blue-500/20 transition-all">
+                        <Button size="md" className="relative h-11 flex items-center gap-2 bg-primary-blue text-white hover:bg-blue-700 border border-transparent hover:shadow-lg hover:shadow-blue-500/30 transition-all">
                             <Calendar size={18} className="animate-bounce" style={{ animationDuration: '2s' }} />
                             Schedule Call
                         </Button>
@@ -111,7 +111,7 @@ export default function Header() {
                                 className="w-full relative group mt-2"
                             >
                                 <div className="absolute -inset-1 bg-gradient-to-r from-primary-blue via-teal-400 to-primary-blue rounded-lg blur opacity-40 animate-pulse"></div>
-                                <div className="relative flex items-center justify-center gap-2 w-full text-center px-5 py-3 bg-primary-midnight text-white font-semibold rounded-lg hover:bg-gray-900 transition-all">
+                                <div className="relative flex items-center justify-center gap-2 w-full text-center px-5 py-3 bg-primary-blue text-white font-semibold rounded-lg hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-500/30 transition-all">
                                     <Calendar size={20} className="animate-bounce" style={{ animationDuration: '2s' }} />
                                     Schedule Call
                                 </div>
