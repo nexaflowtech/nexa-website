@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Calendar } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
@@ -19,6 +19,15 @@ const navLinks = [
 export default function Header() {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+    const openCalendly = (e: React.MouseEvent) => {
+        e.preventDefault();
+        // @ts-ignore
+        if (window.Calendly) {
+            // @ts-ignore
+            window.Calendly.initPopupWidget({ url: 'https://calendly.com/nexaflowtech007/30min' });
+        }
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -47,7 +56,7 @@ export default function Header() {
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center space-x-10">
-                    {navLinks.slice(0, 5).map((link) => (
+                    {navLinks.map((link) => (
                         <Link
                             key={link.name}
                             href={link.href}
@@ -56,11 +65,13 @@ export default function Header() {
                             {link.name}
                         </Link>
                     ))}
-                    <Link href="/contact">
-                        <Button size="md" className="h-11 shadow-blue-500/10 hover:shadow-blue-500/20">
-                            Get Consultation
+                    <button onClick={openCalendly} className="relative group flex items-center justify-center">
+                        <div className="absolute -inset-1 bg-gradient-to-r from-primary-blue via-teal-400 to-primary-blue rounded-lg blur opacity-40 group-hover:opacity-75 transition duration-500 animate-pulse"></div>
+                        <Button size="md" className="relative h-11 flex items-center gap-2 bg-primary-midnight text-white hover:bg-gray-900 border border-transparent hover:shadow-lg hover:shadow-blue-500/20 transition-all">
+                            <Calendar size={18} className="animate-bounce" style={{ animationDuration: '2s' }} />
+                            Schedule Call
                         </Button>
-                    </Link>
+                    </button>
                 </nav>
 
                 {/* Mobile Menu Button */}
@@ -92,13 +103,19 @@ export default function Header() {
                                     {link.name}
                                 </Link>
                             ))}
-                            <Link
-                                href="/contact"
-                                onClick={() => setIsMobileMenuOpen(false)}
-                                className="w-full text-center px-5 py-3 bg-primary-blue text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+                            <button
+                                onClick={(e) => {
+                                    setIsMobileMenuOpen(false);
+                                    openCalendly(e);
+                                }}
+                                className="w-full relative group mt-2"
                             >
-                                Get Consultation
-                            </Link>
+                                <div className="absolute -inset-1 bg-gradient-to-r from-primary-blue via-teal-400 to-primary-blue rounded-lg blur opacity-40 animate-pulse"></div>
+                                <div className="relative flex items-center justify-center gap-2 w-full text-center px-5 py-3 bg-primary-midnight text-white font-semibold rounded-lg hover:bg-gray-900 transition-all">
+                                    <Calendar size={20} className="animate-bounce" style={{ animationDuration: '2s' }} />
+                                    Schedule Call
+                                </div>
+                            </button>
                         </div>
                     </motion.div>
                 )}
