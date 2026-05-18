@@ -65,7 +65,7 @@ export default function Hero() {
                                 NexaFlowTech delivers enterprise-grade <strong className="text-primary-midnight font-semibold">ERP software, SaaS platforms, mobile apps</strong> and custom web solutions for startups and enterprises in India, USA, UK, UAE & beyond.
                             </p>
 
-                            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mb-8">
                                 <Link href="/contact" className="w-full sm:w-auto">
                                     <Button size="lg" className="h-14 px-10 rounded-2xl shadow-blue-500/10 hover:shadow-blue-500/20">
                                         Get Free Consultation
@@ -78,6 +78,25 @@ export default function Hero() {
                                         Explore Services
                                     </Button>
                                 </Link>
+                            </div>
+
+                            <div className="flex flex-wrap items-center justify-center lg:justify-start gap-8 pt-4 border-t border-gray-200">
+                                <div className="text-center">
+                                    <div className="text-3xl font-bold text-primary-midnight">50+</div>
+                                    <div className="text-sm text-gray-500 font-medium">Projects Delivered</div>
+                                </div>
+                                <div className="text-center">
+                                    <div className="text-3xl font-bold text-primary-midnight">20+</div>
+                                    <div className="text-sm text-gray-500 font-medium">Happy Clients</div>
+                                </div>
+                                <div className="text-center">
+                                    <div className="text-3xl font-bold text-primary-midnight">5+</div>
+                                    <div className="text-sm text-gray-500 font-medium">Years Experience</div>
+                                </div>
+                                <div className="text-center">
+                                    <div className="text-3xl font-bold text-primary-midnight">6</div>
+                                    <div className="text-sm text-gray-500 font-medium">Countries Served</div>
+                                </div>
                             </div>
                         </motion.div>
                     </div>

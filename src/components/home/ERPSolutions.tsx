@@ -35,7 +35,7 @@ export default function ERPSolutions() {
                             ))}
                         </div>
 
-                        <Link href="/services/erpnext">
+                        <Link href="/solutions/manufacturing">
                             <Button size="lg" className="w-full sm:w-auto">
                                 Explore ERP Solutions
                                 <ArrowRight size={20} className="ml-2" />

@@ -64,7 +64,7 @@ export default function ContactPage() {
                 <div className="container mx-auto px-6">
                     <h1 className="text-4xl md:text-5xl font-bold mb-6">Get in Touch</h1>
                     <p className="text-xl text-blue-200 max-w-2xl mx-auto">
-                        Ready to transform your business? Let's start a conversation.
+                        Ready to transform your business? Let&apos;s start a conversation.
                     </p>
                 </div>
             </section>
@@ -91,7 +91,6 @@ export default function ContactPage() {
                             </div>
                             <div>
                                 <h3 className="text-lg font-semibold text-gray-900">Email Us</h3>
-                                <p className="text-gray-600">business@nexaflowtech.com</p>
                                 <p className="text-gray-600">info@nexaflowtech.com</p>
                             </div>
                         </div>
@@ -122,7 +121,7 @@ export default function ContactPage() {
                                     <Send size={40} />
                                 </div>
                                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Message Sent!</h3>
-                                <p className="text-gray-600 mb-8">Thank you for reaching out. We'll get back to you within 24 hours.</p>
+                                <p className="text-gray-600 mb-8">Thank you for reaching out. We&apos;ll get back to you within 24 hours.</p>
                                 <Button onClick={() => setSubmitted(false)} variant="outline">Send Another Message</Button>
                             </div>
                         ) : (

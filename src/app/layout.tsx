@@ -26,7 +26,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://nexaflowtech.com"),
   title: {
-    default: "ERPNext, Frappe & Custom Software Development Company | NexaFlowTech",
+    default: "ERPNext Implementation Company India | NexaFlowTech",
     template: "%s | NexaFlowTech",
   },
   description:
@@ -63,9 +63,9 @@ export const metadata: Metadata = {
     apple: "/apple-icon.png",
   },
   openGraph: {
-    title: "ERPNext, Frappe & Custom Software Development Company | NexaFlowTech",
+    title: "ERPNext Implementation Company India | NexaFlowTech",
     description:
-      "NexaFlowTech provides ERPNext implementation, Frappe development, SaaS platforms, CRM systems and custom software development services worldwide.",
+      "Expert ERPNext implementation, Frappe development & custom SaaS for manufacturing, retail, and enterprises. India-based, serving USA, UAE & UK.",
     url: "https://nexaflowtech.com",
     siteName: "NexaFlowTech",
     images: [
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "NexaFlowTech - Custom Software Development Company India",
+        alt: "NexaFlowTech - ERPNext Implementation Company India",
       },
     ],
     locale: "en_US",
@@ -81,9 +81,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "ERPNext, Frappe & Custom Software Development Company | NexaFlowTech",
+    title: "ERPNext Implementation Company India | NexaFlowTech",
     description:
-      "Custom ERPNext, Frappe, and SaaS platform development services for businesses worldwide. Based in Lucknow, India.",
+      "Expert ERPNext implementation, Frappe development & custom SaaS platforms. Based in Lucknow, India. Serving USA, UAE, UK & beyond.",
     images: ["/og-image.png"],
     creator: "@nexaflowtech",
   },
@@ -91,7 +91,7 @@ export const metadata: Metadata = {
     canonical: "https://nexaflowtech.com",
   },
   verification: {
-    google: "AN3p-xK_Cv6m9Q9fHFbuYwczW9JQO9uBSX5k6JtqVVI",
+    google: "jXdQwE-V3H_x9Rn_hmmlKtVAlp33H2E3H9lTsiOjDNo",
   },
 };
 
@@ -118,7 +118,7 @@ const organizationSchema = {
         "@type": "ContactPoint",
         telephone: "+91-8382906349",
         contactType: "customer service",
-        email: "business@nexaflowtech.com",
+        email: "info@nexaflowtech.com",
         areaServed: ["IN", "US", "GB", "AE", "CA", "AU"],
         availableLanguage: "English",
         contactOption: "TollFree",
@@ -155,7 +155,7 @@ const organizationSchema = {
       image: "https://nexaflowtech.com/og-image.png",
       url: "https://nexaflowtech.com",
       telephone: "+91-8382906349",
-      email: "business@nexaflowtech.com",
+      email: "info@nexaflowtech.com",
       priceRange: "$$",
       address: {
         "@type": "PostalAddress",

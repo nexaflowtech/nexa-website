@@ -1,7 +1,19 @@
+# https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
 
-# Disallow internal API routes
-Disallow: /api/
-
 Sitemap: https://nexaflowtech.com/sitemap.xml
+
+# Block common admin paths
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Allow search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /

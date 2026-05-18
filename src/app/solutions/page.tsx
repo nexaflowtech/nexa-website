@@ -1,16 +1,15 @@
 import { Factory, ShoppingBag, Stethoscope, GraduationCap, Truck, Rocket, ArrowRight } from "lucide-react";
 import Link from "next/link";
-import Button from "@/components/ui/Button";
 
 export const metadata = {
-    title: "Enterprise Software & ERP Solutions by Industry | NexaFlowTech",
+    title: "Industry ERP Solutions — Manufacturing, Retail, Healthcare | NexaFlowTech",
     description: "Industry-specific software solutions for manufacturing, retail, healthcare, education, and logistics. NexaFlowTech delivers custom ERPNext and SaaS platforms tailored to your business needs.",
     alternates: {
         canonical: "https://nexaflowtech.com/solutions",
     },
     openGraph: {
-        title: "Industry Software Solutions | ERP, SaaS & Automation | NexaFlowTech",
-        description: "Custom software solutions for manufacturing, retail, healthcare, and startups. Scale your business with NexaFlowTech's enterprise expertise.",
+        title: "Industry ERP Solutions | NexaFlowTech",
+        description: "Custom ERP and software solutions for manufacturing, retail, healthcare, and startups. Built on ERPNext.",
         url: "https://nexaflowtech.com/solutions",
         type: "website",
     },
@@ -20,38 +19,44 @@ const solutions = [
     {
         icon: Factory,
         title: "Manufacturing",
-        description: "Streamline production, manage inventory, and optimize supply chains with custom ERPNext modules.",
-        points: ["Production Planning", "BOM Management", "Shop Floor Control"]
+        description: "Streamline production, manage inventory, and optimize supply chains with custom ERPNext manufacturing modules.",
+        points: ["Production Planning", "BOM Management", "Shop Floor Control"],
+        href: "/solutions/manufacturing"
     },
     {
         icon: ShoppingBag,
         title: "Retail",
         description: "Unified POS, inventory management, and e-commerce integration for modern retail businesses.",
-        points: ["Omnichannel Sales", "Loyalty Programs", "Real-time Inventory"]
+        points: ["Omnichannel Sales", "Loyalty Programs", "Real-time Inventory"],
+        href: "/solutions/retail"
     },
     {
         icon: Stethoscope,
         title: "Healthcare",
         description: "Manage patient records, appointments, and billing with secure and compliant healthcare software.",
-        points: ["EMR/EHR", "Appointment Scheduling", "Billing & Insurance"]
+        points: ["EMR/EHR", "Appointment Scheduling", "Billing & Insurance"],
+        href: "/solutions/healthcare"
     },
     {
         icon: GraduationCap,
         title: "Education",
         description: "Comprehensive SIS (Student Information Systems) and LMS (Learning Management Systems).",
-        points: ["Student Records", "Fee Management", "Online Learning"]
+        points: ["Student Records", "Fee Management", "Online Learning"],
+        href: "/solutions/education"
     },
     {
         icon: Truck,
         title: "Logistics",
         description: "Fleet management, route optimization, and shipment tracking solutions.",
-        points: ["Fleet Tracking", "Route Optimization", "Warehouse Management"]
+        points: ["Fleet Tracking", "Route Optimization", "Warehouse Management"],
+        href: "/solutions/logistics"
     },
     {
         icon: Rocket,
         title: "Startups",
         description: "Agile MVPs and scalable tech stacks designed for rapid growth and fundraising.",
-        points: ["Rapid Prototyping", "Scalable Architecture", "Investor Metrics"]
+        points: ["Rapid Prototyping", "Scalable Architecture", "Investor Metrics"],
+        href: "/contact"
     }
 ];
 
@@ -84,7 +89,7 @@ export default function SolutionsPage() {
                                     </li>
                                 ))}
                             </ul>
-                            <Link href={`/contact?subject=${item.title}`}>
+                            <Link href={item.href}>
                                 <span className="text-primary-blue font-semibold flex items-center hover:underline">
                                     Learn More <ArrowRight size={16} className="ml-1" />
                                 </span>

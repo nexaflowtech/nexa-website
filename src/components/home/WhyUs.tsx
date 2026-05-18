@@ -9,9 +9,7 @@ import {
     Layers,
     BarChart3,
     Settings2,
-    Globe,
-    Zap,
-    ShieldCheck
+    Globe
 } from "lucide-react";
 
 // --- Data ---

@@ -22,10 +22,10 @@ export default function Footer() {
                             <a href="https://www.linkedin.com/company/nexaflowtech" className="text-gray-400 hover:text-primary-blue transition-colors">
                                 <Linkedin size={20} />
                             </a>
-                            <a href="#" className="text-gray-400 hover:text-primary-blue transition-colors">
+                            <a href="https://x.com/nexaflowtech" className="text-gray-400 hover:text-primary-blue transition-colors">
                                 <Twitter size={20} />
                             </a>
-                            <a href="#" className="text-gray-400 hover:text-primary-blue transition-colors">
+                            <a href="https://www.facebook.com/nexaflowtech" className="text-gray-400 hover:text-primary-blue transition-colors">
                                 <Facebook size={20} />
                             </a>
                             <a href="https://www.instagram.com/nexaflowtech007?igsh=MW5zcXRra2Q2bHF0cQ==" className="text-gray-400 hover:text-primary-blue transition-colors">
@@ -39,8 +39,10 @@ export default function Footer() {
                         <h3 className="text-lg font-semibold mb-6 text-white">Company</h3>
                         <ul className="space-y-3 text-sm text-gray-400">
                             <li><Link href="/about" className="hover:text-primary-blue transition-colors">About Us</Link></li>
+                            <li><Link href="/team" className="hover:text-primary-blue transition-colors">Our Team</Link></li>
                             <li><Link href="/careers" className="hover:text-primary-blue transition-colors">Careers</Link></li>
                             <li><Link href="/blog" className="hover:text-primary-blue transition-colors">Blog</Link></li>
+                            <li><Link href="/compare" className="hover:text-primary-blue transition-colors">ERP Comparisons</Link></li>
                             <li><Link href="/contact" className="hover:text-primary-blue transition-colors">Contact</Link></li>
                         </ul>
                     </div>
@@ -61,11 +63,11 @@ export default function Footer() {
                     <div>
                         <h3 className="text-lg font-semibold mb-6 text-white">Business Solutions</h3>
                         <ul className="space-y-3 text-sm text-gray-400">
-                            <li><Link href="/solutions" className="hover:text-primary-blue transition-colors">Manufacturing ERP</Link></li>
-                            <li><Link href="/solutions" className="hover:text-primary-blue transition-colors">Retail Management</Link></li>
-                            <li><Link href="/solutions" className="hover:text-primary-blue transition-colors">Healthcare Software</Link></li>
-                            <li><Link href="/solutions" className="hover:text-primary-blue transition-colors">Education & LMS</Link></li>
-                            <li><Link href="/solutions" className="hover:text-primary-blue transition-colors">Logistics & Supply Chain</Link></li>
+                            <li><Link href="/solutions/manufacturing" className="hover:text-primary-blue transition-colors">Manufacturing ERP</Link></li>
+                            <li><Link href="/solutions/retail" className="hover:text-primary-blue transition-colors">Retail Management</Link></li>
+                            <li><Link href="/solutions/healthcare" className="hover:text-primary-blue transition-colors">Healthcare Software</Link></li>
+                            <li><Link href="/solutions/logistics" className="hover:text-primary-blue transition-colors">Logistics & Supply Chain</Link></li>
+                            <li><Link href="/solutions/education" className="hover:text-primary-blue transition-colors">Education ERP</Link></li>
                         </ul>
                     </div>
 
@@ -79,11 +81,11 @@ export default function Footer() {
                             </li>
                             <li className="flex items-center space-x-3">
                                 <Phone size={18} className="text-primary-blue" />
-                                <span>+91 8382906349</span>
+                                <a href="tel:+918382906349" className="hover:text-primary-blue transition-colors">+91 8382906349</a>
                             </li>
                             <li className="flex items-center space-x-3">
                                 <Mail size={18} className="text-primary-blue" />
-                                <span>info@nexaflowtech.com</span>
+                                <a href="mailto:info@nexaflowtech.com" className="hover:text-primary-blue transition-colors">info@nexaflowtech.com</a>
                             </li>
                         </ul>
                     </div>

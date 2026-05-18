@@ -4,14 +4,14 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
-    title: "Software Development Services | ERP, SaaS, Mobile & Web Apps | NexaFlowTech",
+    title: "Software Development Services in India | NexaFlowTech",
     description:
         "Explore NexaFlowTech's full range of software development services: ERPNext implementation, SaaS platform development, custom web applications, mobile apps, and business automation for startups and enterprises worldwide.",
     alternates: {
         canonical: "https://nexaflowtech.com/services",
     },
     openGraph: {
-        title: "Software Development Services | NexaFlowTech India",
+        title: "Software Development Services in India | NexaFlowTech",
         description:
             "ERP, SaaS, web, and mobile development services for businesses in India, USA, UK, UAE, Canada & Australia.",
         url: "https://nexaflowtech.com/services",

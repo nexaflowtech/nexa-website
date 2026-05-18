@@ -3,13 +3,13 @@ import Button from "@/components/ui/Button";
 import { Check } from "lucide-react";
 
 export const metadata = {
-    title: "Software Development Pricing | ERP & SaaS Solutions | NexaFlowTech",
+    title: "Software Development Pricing & Plans | NexaFlowTech",
     description: "Transparent pricing for custom ERP software, SaaS platform development, and enterprise automation. Startup, SME, and Enterprise plans tailored for global growth.",
     alternates: {
         canonical: "https://nexaflowtech.com/pricing",
     },
     openGraph: {
-        title: "Software Development Pricing Plans | NexaFlowTech",
+        title: "Software Development Pricing & Plans | NexaFlowTech",
         description: "Flexible pricing models for custom software, ERPNext, and enterprise web solutions in India, USA, UK, UAE & beyond.",
         url: "https://nexaflowtech.com/pricing",
         type: "website",
@@ -112,7 +112,7 @@ export default function PricingPage() {
 
                             <div className="mt-auto w-full">
                                 <Link href="/contact" className="w-full">
-                                    <Button variant={plan.variant as any} className="w-full">
+                                    <Button variant="outline" className="w-full">
                                         {plan.cta}
                                     </Button>
                                 </Link>
@@ -122,7 +122,7 @@ export default function PricingPage() {
                 </div>
 
                 <div className="mt-16 text-center">
-                    <p className="text-gray-500 mb-4">Need a custom quote? We're happy to help.</p>
+                    <p className="text-gray-500 mb-4">Need a custom quote? We&apos;re happy to help.</p>
                     <Link href="/contact" className="text-primary-blue font-semibold hover:underline">
                         Contact our sales team &rarr;
                     </Link>

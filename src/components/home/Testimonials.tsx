@@ -9,7 +9,7 @@ const testimonials = [
         quote: "NexaFlowtech successfully implemented Frappe ERPNext for us, automating 100% of our manufacturing, inventory, and accounting processes. This significantly reduced manual work and improved overall efficiency. Highly recommended!",
         author: "Anmol Pandey",
         role: "Founder's Office, Evoa Consumer Private Limited",
-        image: "/anmol.jpeg" // Placeholder path
+        image: "/anmol.jpeg"
     },
     {
         quote: "We needed a partner who understood both startup agility and enterprise security. NexaFlow delivered a scalable Fintech platform that helped us secure Series B funding.",
@@ -18,7 +18,7 @@ const testimonials = [
         image: "/images/testimonials/avatar-2.jpg"
     },
     {
-        quote: "Their team doesn't just write code; they engineer business solutions. The custom manufacturing module they built is now the backbone of our factory operations.",
+        quote: "Their team doesn&apos;t just write code; they engineer business solutions. The custom manufacturing module they built is now the backbone of our factory operations.",
         author: "David Ross",
         role: "Operations Director, ManuFacture Co",
         image: "/images/testimonials/avatar-3.jpg"
@@ -48,7 +48,7 @@ export default function Testimonials() {
                         >
                             <Quote size={40} className="text-primary-blue/20 mb-6" />
                             <p className="text-gray-600 text-lg leading-relaxed mb-8 italic">
-                                "{item.quote}"
+                                {item.quote}
                             </p>
 
                             <div className="flex items-center gap-4">
