@@ -55,7 +55,7 @@ export default function ERPNextManufacturing() {
                             </div>
 
                             <h2 className="text-2xl font-bold text-primary-midnight mb-4">Step 1: Enable Manufacturing Module</h2>
-                            <p className="text-gray-600 mb-6">Go to Settings > Modules and enable Manufacturing. This activates BOM, Work Order, and Production Plan doctypes.</p>
+                            <p className="text-gray-600 mb-6">Go to Settings &gt; Modules and enable Manufacturing. This activates BOM, Work Order, and Production Plan doctypes.</p>
 
                             <h2 className="text-2xl font-bold text-primary-midnight mb-4">Step 2: Create Item Templates</h2>
                             <p className="text-gray-600 mb-6">Create your finished products and raw materials with proper item codes, stock units, and default warehouses.</p>
